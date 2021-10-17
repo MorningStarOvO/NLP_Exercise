@@ -1,5 +1,5 @@
 """
-    本代码用于: XXXX
+    本代码用于: 熟悉 CNN、DNN、RNN 的操作 (Pytorch)
     创建时间: 2021 年 10 月 10 日
     创建人: MorningStar
     最后一次修改时间: 2021 年 10 月 10 日
@@ -80,6 +80,9 @@ if __name__ == '__main__':
         model = RNN()
     else:
         print("error model !")
+
+    print(model)
+    print('\n')
 
     # 恢复网络模型
     if args.resume:

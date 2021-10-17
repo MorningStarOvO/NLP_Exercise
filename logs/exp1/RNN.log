@@ -1,0 +1,177 @@
+nohup: ignoring input
+程序开始运行 !
+'parser 的输入参数: '
+{'batch_size': 32,
+ 'epochs': 25,
+ 'lr': 0.0001,
+ 'model': 'RNN',
+ 'random': 100,
+ 'resume': '',
+ 'workers': 8}
+
+
+=> creating model:  RNN
+
+
+RNN(
+  (rnn): LSTM(256, 128, num_layers=2, batch_first=True)
+  (out): Linear(in_features=128, out_features=2, bias=True)
+)
+
+
+=> 从头开始训练
+
+
+learning rate -> 0.0001
+Epoch 0 的训练集准确率为:  0.533
+Epoch 0 的训练集损失值为:  0.6892938519281054
+Epoch 0 的测试集准确率为:  0.564
+
+
+learning rate -> 0.0001
+Epoch 1 的训练集准确率为:  0.5725
+Epoch 1 的训练集损失值为:  0.6813661257425944
+Epoch 1 的测试集准确率为:  0.57
+
+
+learning rate -> 0.0001
+Epoch 2 的训练集准确率为:  0.591
+Epoch 2 的训练集损失值为:  0.6728643245167203
+Epoch 2 的测试集准确率为:  0.586
+
+
+learning rate -> 0.0001
+Epoch 3 的训练集准确率为:  0.609
+Epoch 3 的训练集损失值为:  0.6635261225321937
+Epoch 3 的测试集准确率为:  0.594
+
+
+learning rate -> 0.0001
+Epoch 4 的训练集准确率为:  0.6345
+Epoch 4 的训练集损失值为:  0.6515744981311616
+Epoch 4 的测试集准确率为:  0.582
+
+
+learning rate -> 0.0001
+Epoch 5 的训练集准确率为:  0.638
+Epoch 5 的训练集损失值为:  0.6387826648969499
+Epoch 5 的测试集准确率为:  0.558
+
+
+learning rate -> 0.0001
+Epoch 6 的训练集准确率为:  0.6515
+Epoch 6 的训练集损失值为:  0.6195799774593778
+Epoch 6 的测试集准确率为:  0.552
+
+
+learning rate -> 0.0001
+Epoch 7 的训练集准确率为:  0.672
+Epoch 7 的训练集损失值为:  0.6035713141872769
+Epoch 7 的测试集准确率为:  0.578
+
+
+learning rate -> 0.0001
+Epoch 8 的训练集准确率为:  0.694
+Epoch 8 的训练集损失值为:  0.5834350846116505
+Epoch 8 的测试集准确率为:  0.588
+
+
+learning rate -> 0.0001
+Epoch 9 的训练集准确率为:  0.7105
+Epoch 9 的训练集损失值为:  0.5624576508998871
+Epoch 9 的测试集准确率为:  0.584
+
+
+learning rate -> 0.0001
+Epoch 10 的训练集准确率为:  0.726
+Epoch 10 的训练集损失值为:  0.540959446203141
+Epoch 10 的测试集准确率为:  0.57
+
+
+learning rate -> 0.0001
+Epoch 11 的训练集准确率为:  0.742
+Epoch 11 的训练集损失值为:  0.5131048124934
+Epoch 11 的测试集准确率为:  0.574
+
+
+learning rate -> 0.0001
+Epoch 12 的训练集准确率为:  0.7665
+Epoch 12 的训练集损失值为:  0.48530044394826133
+Epoch 12 的测试集准确率为:  0.604
+
+
+learning rate -> 0.0001
+Epoch 13 的训练集准确率为:  0.789
+Epoch 13 的训练集损失值为:  0.45292454059161835
+Epoch 13 的测试集准确率为:  0.57
+
+
+learning rate -> 0.0001
+Epoch 14 的训练集准确率为:  0.81
+Epoch 14 的训练集损失值为:  0.4175116462366922
+Epoch 14 的测试集准确率为:  0.566
+
+
+learning rate -> 0.0001
+Epoch 15 的训练集准确率为:  0.827
+Epoch 15 的训练集损失值为:  0.39089757866329616
+Epoch 15 的测试集准确率为:  0.552
+
+
+learning rate -> 0.0001
+Epoch 16 的训练集准确率为:  0.832
+Epoch 16 的训练集损失值为:  0.3794980895897699
+Epoch 16 的测试集准确率为:  0.556
+
+
+learning rate -> 0.0001
+Epoch 17 的训练集准确率为:  0.852
+Epoch 17 的训练集损失值为:  0.3379063019676814
+Epoch 17 的测试集准确率为:  0.536
+
+
+learning rate -> 0.0001
+Epoch 18 的训练集准确率为:  0.851
+Epoch 18 的训练集损失值为:  0.32558798884588575
+Epoch 18 的测试集准确率为:  0.56
+
+
+learning rate -> 0.0001
+Epoch 19 的训练集准确率为:  0.8725
+Epoch 19 的训练集损失值为:  0.29773601132725913
+Epoch 19 的测试集准确率为:  0.546
+
+
+learning rate -> 0.0001
+Epoch 20 的训练集准确率为:  0.8895
+Epoch 20 的训练集损失值为:  0.2641624375468209
+Epoch 20 的测试集准确率为:  0.514
+
+
+learning rate -> 1e-05
+Epoch 21 的训练集准确率为:  0.9195
+Epoch 21 的训练集损失值为:  0.21293421811054622
+Epoch 21 的测试集准确率为:  0.52
+
+
+learning rate -> 1e-05
+Epoch 22 的训练集准确率为:  0.923
+Epoch 22 的训练集损失值为:  0.19760122351230136
+Epoch 22 的测试集准确率为:  0.53
+
+
+learning rate -> 1e-05
+Epoch 23 的训练集准确率为:  0.9265
+Epoch 23 的训练集损失值为:  0.1897542876383615
+Epoch 23 的测试集准确率为:  0.536
+
+
+learning rate -> 1e-05
+Epoch 24 的训练集准确率为:  0.931
+Epoch 24 的训练集损失值为:  0.181702450390846
+No handles with labels found to put in legend.
+Epoch 24 的测试集准确率为:  0.534
+
+
+程序运行时间: 0时4分18.95秒
+程序已结束 ！
