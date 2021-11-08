@@ -14,12 +14,13 @@ def parse_opt():
     parser = argparse.ArgumentParser(description='NLP Homework2 !')
 
     # 选择词向量模型
-    # RNNLM 暂未实现
-    parser.add_argument('--model', default="NNLM", type=str,
-                        help="Name of model: NNLM、RNNLM、C&W、CBOW、Skip-gram")
+    parser.add_argument('--model', default="CBOW", type=str,
+                        help="Name of model: NNLM、RNNLM、CBOW")
+    # parser.add_argument('--model', default="CBOW", type=str,
+    #                     help="Name of model: NNLM、RNNLM、C_W、CBOW、Skip-gram")
   
     # 选择中英文本
-    parser.add_argument('--txt_type', default="en", type=str,
+    parser.add_argument('--txt_type', default="zh", type=str,
                         help="Name of txt type: en、zh")
 
     # 设置词向量维度
@@ -30,8 +31,17 @@ def parse_opt():
     parser.add_argument('--n_gram', default=2, type=int, 
                         help="n-gram")
 
+    # 设置 context_window 
+    parser.add_argument('--ctxt_win', default=3, type=int, 
+                        help="context_window size")
+
+    # 设置 negative samples
+    parser.add_argument('--neg_size', default=15, type=int, 
+                        help="negative samples")
+
+
     # 设置随机数种子
-    parser.add_argument('--random', default=4321, type=int, 
+    parser.add_argument('--random', default=1024, type=int, 
                         help="random seed")
 
     # 设置 CPU 的 workers 
@@ -52,7 +62,7 @@ def parse_opt():
                         help='path to latest checkpoint (default: none)')
 
     # 设置训练的 epoch 数目
-    parser.add_argument('--epochs', default=256, type=int, metavar='N',
+    parser.add_argument('--epochs', default=32, type=int, metavar='N',
                         help='number of total epochs to run')
 
     args = parser.parse_args()

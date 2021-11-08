@@ -109,7 +109,7 @@ def draw_acc_pic(acc_train_list, acc_test_list, loss_list, args):
     """
     # 绘制损失值曲线
     plt.figure()
-    plt.plot(loss_list)
+    plt.plot(loss_list, label="loss")
     plt.xlabel("Epoch", fontproperties=font)
     plt.ylabel("损失值", fontproperties=font)
     str_title = args.model + " 损失值曲线"

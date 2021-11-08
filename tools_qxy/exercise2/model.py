@@ -43,7 +43,7 @@ class RNNLM(nn.Module):
 
         # 定义基本参数
         self.n_hidden = 256
-        self.n_class = n_class 
+        self.n_class = n_class
         self.dim_look_up = dim_look_up
         self.n_step = n_step
 
@@ -63,7 +63,9 @@ class RNNLM(nn.Module):
         x = x.view(B, -1, self.dim_look_up)
 
         r_out, (h_n, h_c) = self.rnn(x, None)
-        output = self.output(r_out[:, -1, :])
+
+
+        output = self.output(r_out)    
 
         return output
 
@@ -95,17 +97,17 @@ class C_and_W(nn.Module):
 
 # ---------- 定义 CBOW 模型 ---------- #
 class CBOW(nn.Module):
-    def __init__(self, n_class, dim_look_up, n_step, args):
+    def __init__(self, n_class, dim_look_up, args):
         super(CBOW, self).__init__()
 
         # 定义基本参数
         self.n_class = n_class 
         self.dim_look_up = dim_look_up
-        self.n_step = n_step
+        self.n_step = args.ctxt_win * 2
 
         # 定义模型结构
         self.lookup = nn.Embedding(n_class, dim_look_up)
-        self.output = nn.Linear(n_step * dim_look_up, self.n_class)
+        self.output = nn.Linear(self.n_step * dim_look_up, self.n_class)
 
     def forward(self, x):
         x = self.lookup(x)
