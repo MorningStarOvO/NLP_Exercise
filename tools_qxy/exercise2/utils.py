@@ -125,7 +125,7 @@ def txt_preprocess(path_read, path_save):
 
         # 建立词云
         str_word_cloud = " ".join(lines)
-        word_cloud = WordCloud(background_color='white')
+        word_cloud = WordCloud(background_color='white', font_path="SimHei.ttf")
         word_cloud.generate(str_word_cloud)
         word_cloud.to_file(path_save + "WordCloud.png")
         
