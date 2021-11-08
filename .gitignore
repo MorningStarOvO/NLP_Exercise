@@ -1,4 +1,5 @@
-data/exp1/*
+data/exp1_train/*
+data/exp1_val/*
 data/exp3/*
 checkpoint
 SimHei.ttf
