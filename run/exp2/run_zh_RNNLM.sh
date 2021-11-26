@@ -1,6 +1,6 @@
 #! /bin/sh
 seed=1321
-epoch=128
+epoch=64
 batch_sz=256
 model="RNNLM"
 language="zh"

@@ -242,7 +242,7 @@ def Test_Embedding(model, n_class, args, word_dict, number_dict):
 
     # 找出最近的词
     if args.txt_type == "en":
-        for word in["man", "happy", "beautiful"]:
+        for word in["china", "new", "people"]:
             index = word_dict[word]
             temp_embed = data_embed[index]
             cos_dis = np.array([T.distance.cosine(e, temp_embed) for e in data_embed])
@@ -250,7 +250,7 @@ def Test_Embedding(model, n_class, args, word_dict, number_dict):
             print([number_dict[i] for i in cos_dis.argsort()[:10]])
             print("\n")
     elif args.txt_type == "zh":
-        for word in["男", "女", "美"]:
+        for word in["他们", "工作", "美国"]:
             index = word_dict[word]
             temp_embed = data_embed[index]
             cos_dis = np.array([T.distance.cosine(e, temp_embed) for e in data_embed])
