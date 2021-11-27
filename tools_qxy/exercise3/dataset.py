@@ -18,6 +18,9 @@ from PIL import Image
 # ----- 模型创建相关 ----- # 
 import torch 
 
+# ----- 导入自定义的包 ----- #
+from utils import build_glove
+
 # ==================== 函数实现 ==================== #
 # ---------- 定义数据加载器 ---------- #
 class NERdataset(Dataset):
@@ -28,10 +31,12 @@ class NERdataset(Dataset):
         label_file = file_dir + '_label.txt'
         corpus = open(corpus_file).readlines()
         label = open(label_file).readlines()
+        
+        # self.glove_list = build_glove()
+        # word2id = build_glove()
         self.corpus = []
         self.label = []
         self.length = []
-        self.word2id = word2id
         self.tag2id = tag2id
         for corpus_, label_ in zip(corpus, label):
             assert len(corpus_.split()) == len(label_.split())
@@ -48,11 +53,13 @@ class NERdataset(Dataset):
                     self.corpus[-1].append(word2id['pad'])
                     self.label[-1].append(tag2id['PAD'])
 
-        self.corpus = torch.Tensor(self.corpus).long()
+        
+        self.corpus = torch.Tensor(self.corpus).long() 
         self.label = torch.Tensor(self.label).long()
         self.length = torch.Tensor(self.length).long()
 
     def __getitem__(self, item):
+        # print(self.corpus[item])
         return self.corpus[item], self.label[item], self.length[item]
 
     def __len__(self):

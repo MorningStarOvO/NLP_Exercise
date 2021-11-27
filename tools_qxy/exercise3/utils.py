@@ -48,6 +48,8 @@ font = FontProperties(fname='SimHei.ttf', size=16)    # 创建字体对象
 
 # ----- 存储文件相关 ----- #
 
+START_TAG = "<START>"
+STOP_TAG = "<STOP>"
 
 # ==================== 函数实现 ==================== #
 # ---------- 设置随机种子, 使结果可复现 ---------- #
@@ -70,6 +72,18 @@ class Config():
         self.hidden_dim = 512
         self.save_model = 'checkpoint/exp3/model.pth'
         self.batch_size = 32
+
+# ----- 建立 glove 词表 ----- # 
+def build_glove():
+    word_2_embed = {}
+    with open("data/glove/glove.6B.300d.txt", encoding="utf-8", mode="r") as textFile:
+        for line in textFile:
+            line = line.split()
+            word = line[0]
+            temp = np.array(line[1:], dtype=np.float32)
+            word_2_embed[word] = temp 
+
+    return word_2_embed
 
 # ---------- 建立词表 ---------- #
 def build_vocab(data_dir):
@@ -115,7 +129,7 @@ def build_dict(word_dict):
     """
 
     # 7 is the label of pad
-    tag2id = {'O': 0, 'B-PER': 1, 'I-PER': 2, 'B-ORG': 3, 'I-ORG': 4, 'B-LOC': 5, 'I-LOC': 6, 'PAD': 7}
+    tag2id = {'O': 0, 'B-PER': 1, 'I-PER': 2, 'B-ORG': 3, 'I-ORG': 4, 'B-LOC': 5, 'I-LOC': 6, 'PAD': 7, START_TAG: 8, STOP_TAG: 9}
     word2id = {}
     for key in word_dict:
         word2id[key] = len(word2id)
