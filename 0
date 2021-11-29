@@ -1,6 +1,0 @@
-screen -d qxy_NLP 
-ls
-cd NLP_exercise/
-ls
-conda activate qxy_lxmert
-ls
