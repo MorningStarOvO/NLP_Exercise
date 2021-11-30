@@ -71,7 +71,7 @@ class Config():
         self.embedding_dim = 300
         self.hidden_dim = 512
         self.save_model = 'checkpoint/exp3/model.pth'
-        self.batch_size = 1
+        self.batch_size = 128
         self.socre_choice = 0
 
 # ----- 建立 glove 词表 ----- # 

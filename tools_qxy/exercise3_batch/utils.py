@@ -5,6 +5,7 @@
     最后一次修改时间: 2021 年 11 月 26 日
     具体的函数: 
         setup_seed(): 置随机种子, 使结果可复现 
+        
 """
 
 # ==================== 导入必要的包 ==================== #
@@ -71,7 +72,7 @@ class Config():
         self.embedding_dim = 300
         self.hidden_dim = 512
         self.save_model = 'checkpoint/exp3/model.pth'
-        self.batch_size = 1
+        self.batch_size = 128
         self.socre_choice = 0
 
 # ----- 建立 glove 词表 ----- # 

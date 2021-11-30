@@ -1,0 +1,697 @@
+nohup: ignoring input
+epoch:  0  step:0000,------------loss:2.116987
+epoch:  0  step:0200,------------loss:0.954552
+epoch:  0  step:0400,------------loss:0.328683
+epoch:  0  step:0600,------------loss:0.537017
+epoch:  0  step:0800,------------loss:0.631050
+epoch:  0  step:1000,------------loss:0.055894
+epoch:  0  step:1200,------------loss:0.296256
+epoch:  0  step:1400,------------loss:0.363904
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96    152505
+           1       0.91      0.08      0.15      1973
+           2       0.73      0.22      0.33      3851
+           3       0.73      0.04      0.07      1331
+           4       0.60      0.43      0.50      5670
+           5       0.73      0.32      0.44      2877
+           6       0.65      0.30      0.41      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.91    172601
+   macro avg       0.66      0.30      0.36    172601
+weighted avg       0.90      0.91      0.89    172601
+
+epoch:  1  step:0000,------------loss:0.248680
+epoch:  1  step:0200,------------loss:0.528585
+epoch:  1  step:0400,------------loss:0.172921
+epoch:  1  step:0600,------------loss:0.362546
+epoch:  1  step:0800,------------loss:0.479505
+epoch:  1  step:1000,------------loss:0.022368
+epoch:  1  step:1200,------------loss:0.200630
+epoch:  1  step:1400,------------loss:0.252542
+              precision    recall  f1-score   support
+
+           0       0.95      0.99      0.97    152505
+           1       0.91      0.33      0.48      1973
+           2       0.78      0.60      0.68      3851
+           3       0.80      0.33      0.47      1331
+           4       0.74      0.62      0.68      5670
+           5       0.82      0.56      0.66      2877
+           6       0.76      0.52      0.62      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.94    172601
+   macro avg       0.72      0.49      0.57    172601
+weighted avg       0.94      0.94      0.93    172601
+
+epoch:  2  step:0000,------------loss:0.190337
+epoch:  2  step:0200,------------loss:0.380676
+epoch:  2  step:0400,------------loss:0.118803
+epoch:  2  step:0600,------------loss:0.264949
+epoch:  2  step:0800,------------loss:0.385326
+epoch:  2  step:1000,------------loss:0.012183
+epoch:  2  step:1200,------------loss:0.154200
+epoch:  2  step:1400,------------loss:0.199997
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98    152505
+           1       0.91      0.47      0.62      1973
+           2       0.83      0.70      0.76      3851
+           3       0.81      0.44      0.57      1331
+           4       0.78      0.71      0.74      5670
+           5       0.83      0.64      0.73      2877
+           6       0.79      0.61      0.69      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.95    172601
+   macro avg       0.74      0.57      0.64    172601
+weighted avg       0.95      0.95      0.95    172601
+
+epoch:  3  step:0000,------------loss:0.179648
+epoch:  3  step:0200,------------loss:0.280261
+epoch:  3  step:0400,------------loss:0.088060
+epoch:  3  step:0600,------------loss:0.216836
+epoch:  3  step:0800,------------loss:0.324889
+epoch:  3  step:1000,------------loss:0.012228
+epoch:  3  step:1200,------------loss:0.150895
+epoch:  3  step:1400,------------loss:0.173940
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98    152505
+           1       0.90      0.54      0.67      1973
+           2       0.84      0.76      0.80      3851
+           3       0.79      0.51      0.62      1331
+           4       0.80      0.75      0.77      5670
+           5       0.85      0.70      0.77      2877
+           6       0.82      0.67      0.74      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.96    172601
+   macro avg       0.75      0.61      0.67    172601
+weighted avg       0.95      0.96      0.95    172601
+
+epoch:  4  step:0000,------------loss:0.142973
+epoch:  4  step:0200,------------loss:0.240224
+epoch:  4  step:0400,------------loss:0.086347
+epoch:  4  step:0600,------------loss:0.204358
+epoch:  4  step:0800,------------loss:0.285093
+epoch:  4  step:1000,------------loss:0.008687
+epoch:  4  step:1200,------------loss:0.133136
+epoch:  4  step:1400,------------loss:0.142557
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98    152505
+           1       0.89      0.60      0.72      1973
+           2       0.85      0.78      0.82      3851
+           3       0.81      0.55      0.65      1331
+           4       0.82      0.78      0.80      5670
+           5       0.86      0.73      0.79      2877
+           6       0.84      0.71      0.76      4394
+
+    accuracy                           0.96    172601
+   macro avg       0.86      0.74      0.79    172601
+weighted avg       0.96      0.96      0.96    172601
+
+epoch:  5  step:0000,------------loss:0.139652
+epoch:  5  step:0200,------------loss:0.219298
+epoch:  5  step:0400,------------loss:0.064808
+epoch:  5  step:0600,------------loss:0.183833
+epoch:  5  step:0800,------------loss:0.274471
+epoch:  5  step:1000,------------loss:0.009052
+epoch:  5  step:1200,------------loss:0.123367
+epoch:  5  step:1400,------------loss:0.131171
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98    152505
+           1       0.90      0.64      0.75      1973
+           2       0.85      0.81      0.83      3851
+           3       0.81      0.58      0.68      1331
+           4       0.82      0.79      0.81      5670
+           5       0.87      0.75      0.81      2877
+           6       0.84      0.73      0.78      4394
+
+    accuracy                           0.96    172601
+   macro avg       0.87      0.76      0.81    172601
+weighted avg       0.96      0.96      0.96    172601
+
+epoch:  6  step:0000,------------loss:0.112184
+epoch:  6  step:0200,------------loss:0.202894
+epoch:  6  step:0400,------------loss:0.062128
+epoch:  6  step:0600,------------loss:0.149527
+epoch:  6  step:0800,------------loss:0.261103
+epoch:  6  step:1000,------------loss:0.008794
+epoch:  6  step:1200,------------loss:0.122733
+epoch:  6  step:1400,------------loss:0.113430
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.66      0.76      1973
+           2       0.86      0.82      0.84      3851
+           3       0.82      0.60      0.69      1331
+           4       0.83      0.81      0.82      5670
+           5       0.88      0.76      0.82      2877
+           6       0.85      0.74      0.80      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.88      0.77      0.82    172601
+weighted avg       0.96      0.97      0.96    172601
+
+epoch:  7  step:0000,------------loss:0.125132
+epoch:  7  step:0200,------------loss:0.181655
+epoch:  7  step:0400,------------loss:0.046916
+epoch:  7  step:0600,------------loss:0.131673
+epoch:  7  step:0800,------------loss:0.220478
+epoch:  7  step:1000,------------loss:0.006370
+epoch:  7  step:1200,------------loss:0.118737
+epoch:  7  step:1400,------------loss:0.101612
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.69      0.78      1973
+           2       0.87      0.83      0.85      3851
+           3       0.83      0.62      0.71      1331
+           4       0.85      0.82      0.83      5670
+           5       0.88      0.78      0.83      2877
+           6       0.86      0.77      0.81      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.88      0.78      0.83    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  8  step:0000,------------loss:0.123127
+epoch:  8  step:0200,------------loss:0.155781
+epoch:  8  step:0400,------------loss:0.048989
+epoch:  8  step:0600,------------loss:0.107238
+epoch:  8  step:0800,------------loss:0.210775
+epoch:  8  step:1000,------------loss:0.005428
+epoch:  8  step:1200,------------loss:0.118662
+epoch:  8  step:1400,------------loss:0.090765
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.70      0.79      1973
+           2       0.87      0.83      0.85      3851
+           3       0.85      0.64      0.73      1331
+           4       0.85      0.81      0.83      5670
+           5       0.88      0.79      0.83      2877
+           6       0.86      0.78      0.82      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.89      0.79      0.83    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  9  step:0000,------------loss:0.109012
+epoch:  9  step:0200,------------loss:0.151419
+epoch:  9  step:0400,------------loss:0.044940
+epoch:  9  step:0600,------------loss:0.097121
+epoch:  9  step:0800,------------loss:0.201694
+epoch:  9  step:1000,------------loss:0.005701
+epoch:  9  step:1200,------------loss:0.088935
+epoch:  9  step:1400,------------loss:0.081894
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.72      0.80      1973
+           2       0.88      0.83      0.86      3851
+           3       0.85      0.65      0.73      1331
+           4       0.86      0.81      0.84      5670
+           5       0.88      0.80      0.84      2877
+           6       0.86      0.79      0.83      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.89      0.80      0.84    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  10  step:0000,------------loss:0.099609
+epoch:  10  step:0200,------------loss:0.146342
+epoch:  10  step:0400,------------loss:0.044288
+epoch:  10  step:0600,------------loss:0.083642
+epoch:  10  step:0800,------------loss:0.175195
+epoch:  10  step:1000,------------loss:0.005038
+epoch:  10  step:1200,------------loss:0.090220
+epoch:  10  step:1400,------------loss:0.061834
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.72      0.81      1973
+           2       0.88      0.84      0.86      3851
+           3       0.85      0.66      0.74      1331
+           4       0.87      0.82      0.84      5670
+           5       0.89      0.80      0.84      2877
+           6       0.87      0.80      0.83      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.89      0.80      0.84    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  11  step:0000,------------loss:0.100673
+epoch:  11  step:0200,------------loss:0.136495
+epoch:  11  step:0400,------------loss:0.037224
+epoch:  11  step:0600,------------loss:0.073720
+epoch:  11  step:0800,------------loss:0.179979
+epoch:  11  step:1000,------------loss:0.004534
+epoch:  11  step:1200,------------loss:0.080033
+epoch:  11  step:1400,------------loss:0.059943
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.72      0.80      1973
+           2       0.88      0.84      0.86      3851
+           3       0.85      0.66      0.74      1331
+           4       0.87      0.81      0.84      5670
+           5       0.89      0.80      0.84      2877
+           6       0.87      0.80      0.83      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.89      0.80      0.84    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  12  step:0000,------------loss:0.106107
+epoch:  12  step:0200,------------loss:0.128320
+epoch:  12  step:0400,------------loss:0.036525
+epoch:  12  step:0600,------------loss:0.074690
+epoch:  12  step:0800,------------loss:0.153077
+epoch:  12  step:1000,------------loss:0.006289
+epoch:  12  step:1200,------------loss:0.080110
+epoch:  12  step:1400,------------loss:0.063148
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.72      0.81      1973
+           2       0.89      0.84      0.86      3851
+           3       0.85      0.67      0.75      1331
+           4       0.87      0.82      0.84      5670
+           5       0.90      0.80      0.85      2877
+           6       0.87      0.80      0.83      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.81      0.85    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  13  step:0000,------------loss:0.090081
+epoch:  13  step:0200,------------loss:0.103404
+epoch:  13  step:0400,------------loss:0.032813
+epoch:  13  step:0600,------------loss:0.070780
+epoch:  13  step:0800,------------loss:0.159873
+epoch:  13  step:1000,------------loss:0.004747
+epoch:  13  step:1200,------------loss:0.075310
+epoch:  13  step:1400,------------loss:0.055670
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.73      0.81      1973
+           2       0.89      0.85      0.87      3851
+           3       0.87      0.65      0.74      1331
+           4       0.88      0.80      0.84      5670
+           5       0.89      0.81      0.85      2877
+           6       0.87      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.81      0.85    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  14  step:0000,------------loss:0.086282
+epoch:  14  step:0200,------------loss:0.126182
+epoch:  14  step:0400,------------loss:0.029247
+epoch:  14  step:0600,------------loss:0.059375
+epoch:  14  step:0800,------------loss:0.136917
+epoch:  14  step:1000,------------loss:0.004051
+epoch:  14  step:1200,------------loss:0.082713
+epoch:  14  step:1400,------------loss:0.052312
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.91      0.74      0.82      1973
+           2       0.89      0.85      0.87      3851
+           3       0.85      0.69      0.76      1331
+           4       0.86      0.83      0.84      5670
+           5       0.90      0.82      0.86      2877
+           6       0.87      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.89      0.82      0.85    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  15  step:0000,------------loss:0.085695
+epoch:  15  step:0200,------------loss:0.090889
+epoch:  15  step:0400,------------loss:0.021741
+epoch:  15  step:0600,------------loss:0.054711
+epoch:  15  step:0800,------------loss:0.123433
+epoch:  15  step:1000,------------loss:0.004035
+epoch:  15  step:1200,------------loss:0.063323
+epoch:  15  step:1400,------------loss:0.052115
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.73      0.82      1973
+           2       0.90      0.85      0.87      3851
+           3       0.86      0.67      0.76      1331
+           4       0.88      0.78      0.83      5670
+           5       0.90      0.82      0.86      2877
+           6       0.88      0.80      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.81      0.85    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  16  step:0000,------------loss:0.083847
+epoch:  16  step:0200,------------loss:0.101668
+epoch:  16  step:0400,------------loss:0.029662
+epoch:  16  step:0600,------------loss:0.050035
+epoch:  16  step:0800,------------loss:0.130539
+epoch:  16  step:1000,------------loss:0.003774
+epoch:  16  step:1200,------------loss:0.059650
+epoch:  16  step:1400,------------loss:0.040416
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.73      0.82      1973
+           2       0.90      0.85      0.87      3851
+           3       0.87      0.68      0.77      1331
+           4       0.88      0.80      0.84      5670
+           5       0.90      0.81      0.85      2877
+           6       0.87      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.81      0.85    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  17  step:0000,------------loss:0.079483
+epoch:  17  step:0200,------------loss:0.086525
+epoch:  17  step:0400,------------loss:0.024580
+epoch:  17  step:0600,------------loss:0.048149
+epoch:  17  step:0800,------------loss:0.109531
+epoch:  17  step:1000,------------loss:0.004756
+epoch:  17  step:1200,------------loss:0.043386
+epoch:  17  step:1400,------------loss:0.032462
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.93      0.74      0.83      1973
+           2       0.90      0.85      0.87      3851
+           3       0.86      0.68      0.76      1331
+           4       0.88      0.81      0.84      5670
+           5       0.90      0.82      0.86      2877
+           6       0.87      0.83      0.85      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  18  step:0000,------------loss:0.084295
+epoch:  18  step:0200,------------loss:0.086475
+epoch:  18  step:0400,------------loss:0.030070
+epoch:  18  step:0600,------------loss:0.044420
+epoch:  18  step:0800,------------loss:0.101316
+epoch:  18  step:1000,------------loss:0.002945
+epoch:  18  step:1200,------------loss:0.059917
+epoch:  18  step:1400,------------loss:0.044206
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.93      0.74      0.82      1973
+           2       0.91      0.84      0.87      3851
+           3       0.86      0.69      0.77      1331
+           4       0.87      0.81      0.84      5670
+           5       0.90      0.82      0.86      2877
+           6       0.87      0.82      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  19  step:0000,------------loss:0.075020
+epoch:  19  step:0200,------------loss:0.069987
+epoch:  19  step:0400,------------loss:0.026159
+epoch:  19  step:0600,------------loss:0.048158
+epoch:  19  step:0800,------------loss:0.108389
+epoch:  19  step:1000,------------loss:0.003478
+epoch:  19  step:1200,------------loss:0.038484
+epoch:  19  step:1400,------------loss:0.038080
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.74      0.82      1973
+           2       0.90      0.86      0.88      3851
+           3       0.87      0.69      0.77      1331
+           4       0.88      0.80      0.84      5670
+           5       0.90      0.82      0.86      2877
+           6       0.88      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.91      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  20  step:0000,------------loss:0.080638
+epoch:  20  step:0200,------------loss:0.074493
+epoch:  20  step:0400,------------loss:0.018944
+epoch:  20  step:0600,------------loss:0.037634
+epoch:  20  step:0800,------------loss:0.098457
+epoch:  20  step:1000,------------loss:0.003108
+epoch:  20  step:1200,------------loss:0.033179
+epoch:  20  step:1400,------------loss:0.030492
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.75      0.82      1973
+           2       0.91      0.83      0.87      3851
+           3       0.86      0.69      0.77      1331
+           4       0.88      0.80      0.84      5670
+           5       0.90      0.83      0.86      2877
+           6       0.87      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  21  step:0000,------------loss:0.063401
+epoch:  21  step:0200,------------loss:0.079392
+epoch:  21  step:0400,------------loss:0.016012
+epoch:  21  step:0600,------------loss:0.036409
+epoch:  21  step:0800,------------loss:0.091142
+epoch:  21  step:1000,------------loss:0.003336
+epoch:  21  step:1200,------------loss:0.032831
+epoch:  21  step:1400,------------loss:0.028434
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.74      0.82      1973
+           2       0.91      0.82      0.86      3851
+           3       0.85      0.71      0.77      1331
+           4       0.87      0.82      0.84      5670
+           5       0.91      0.82      0.86      2877
+           6       0.87      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  22  step:0000,------------loss:0.068228
+epoch:  22  step:0200,------------loss:0.068353
+epoch:  22  step:0400,------------loss:0.014541
+epoch:  22  step:0600,------------loss:0.040832
+epoch:  22  step:0800,------------loss:0.087263
+epoch:  22  step:1000,------------loss:0.003870
+epoch:  22  step:1200,------------loss:0.036431
+epoch:  22  step:1400,------------loss:0.027316
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.74      0.82      1973
+           2       0.90      0.84      0.87      3851
+           3       0.86      0.71      0.78      1331
+           4       0.88      0.82      0.84      5670
+           5       0.90      0.83      0.86      2877
+           6       0.87      0.82      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  23  step:0000,------------loss:0.067753
+epoch:  23  step:0200,------------loss:0.052639
+epoch:  23  step:0400,------------loss:0.070774
+epoch:  23  step:0600,------------loss:0.039779
+epoch:  23  step:0800,------------loss:0.084511
+epoch:  23  step:1000,------------loss:0.003182
+epoch:  23  step:1200,------------loss:0.029593
+epoch:  23  step:1400,------------loss:0.027394
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.74      0.82      1973
+           2       0.91      0.84      0.87      3851
+           3       0.87      0.71      0.78      1331
+           4       0.88      0.80      0.84      5670
+           5       0.90      0.84      0.87      2877
+           6       0.87      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.91      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  24  step:0000,------------loss:0.065446
+epoch:  24  step:0200,------------loss:0.048887
+epoch:  24  step:0400,------------loss:0.021783
+epoch:  24  step:0600,------------loss:0.034811
+epoch:  24  step:0800,------------loss:0.083956
+epoch:  24  step:1000,------------loss:0.002276
+epoch:  24  step:1200,------------loss:0.032488
+epoch:  24  step:1400,------------loss:0.027133
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99    152505
+           1       0.92      0.75      0.82      1973
+           2       0.91      0.82      0.86      3851
+           3       0.86      0.70      0.77      1331
+           4       0.89      0.79      0.84      5670
+           5       0.90      0.84      0.87      2877
+           6       0.87      0.80      0.83      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.91      0.81      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  25  step:0000,------------loss:0.066921
+epoch:  25  step:0200,------------loss:0.050880
+epoch:  25  step:0400,------------loss:0.017025
+epoch:  25  step:0600,------------loss:0.028394
+epoch:  25  step:0800,------------loss:0.077837
+epoch:  25  step:1000,------------loss:0.002445
+epoch:  25  step:1200,------------loss:0.032124
+epoch:  /home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+25  step:1400,------------loss:0.025478
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99    152505
+           1       0.92      0.74      0.82      1973
+           2       0.91      0.83      0.87      3851
+           3       0.86      0.71      0.78      1331
+           4       0.88      0.80      0.84      5670
+           5       0.91      0.83      0.87      2877
+           6       0.88      0.80      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.91      0.81      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  26  step:0000,------------loss:0.058542
+epoch:  26  step:0200,------------loss:0.047919
+epoch:  26  step:0400,------------loss:0.014632
+epoch:  26  step:0600,------------loss:0.041712
+epoch:  26  step:0800,------------loss:0.078214
+epoch:  26  step:1000,------------loss:0.001834
+epoch:  26  step:1200,------------loss:0.033482
+epoch:  26  step:1400,------------loss:0.027646
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.76      0.83      1973
+           2       0.91      0.83      0.87      3851
+           3       0.84      0.75      0.79      1331
+           4       0.86      0.83      0.85      5670
+           5       0.92      0.83      0.87      2877
+           6       0.88      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.83      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  27  step:0000,------------loss:0.054125
+epoch:  27  step:0200,------------loss:0.044543
+epoch:  27  step:0400,------------loss:0.009098
+epoch:  27  step:0600,------------loss:0.027368
+epoch:  27  step:0800,------------loss:0.078062
+epoch:  27  step:1000,------------loss:0.001709
+epoch:  27  step:1200,------------loss:0.025753
+epoch:  27  step:1400,------------loss:0.016465
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.92      0.75      0.82      1973
+           2       0.91      0.83      0.87      3851
+           3       0.83      0.74      0.78      1331
+           4       0.86      0.83      0.85      5670
+           5       0.91      0.84      0.87      2877
+           6       0.87      0.82      0.85      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.90      0.83      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  28  step:0000,------------loss:0.045157
+epoch:  28  step:0200,------------loss:0.046320
+epoch:  28  step:0400,------------loss:0.015276
+epoch:  28  step:0600,------------loss:0.034314
+epoch:  28  step:0800,------------loss:0.070436
+epoch:  28  step:1000,------------loss:0.002288
+epoch:  28  step:1200,------------loss:0.026915
+epoch:  28  step:1400,------------loss:0.023299
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.93      0.75      0.83      1973
+           2       0.92      0.82      0.87      3851
+           3       0.84      0.75      0.80      1331
+           4       0.88      0.83      0.85      5670
+           5       0.91      0.84      0.87      2877
+           6       0.88      0.81      0.84      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.91      0.83      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  29  step:0000,------------loss:0.047819
+epoch:  29  step:0200,------------loss:0.045149
+epoch:  29  step:0400,------------loss:0.016111
+epoch:  29  step:0600,------------loss:0.035647
+epoch:  29  step:0800,------------loss:0.075651
+epoch:  29  step:1000,------------loss:0.004496
+epoch:  29  step:1200,------------loss:0.021090
+epoch:  29  step:1400,------------loss:0.022505
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99    152505
+           1       0.93      0.76      0.83      1973
+           2       0.91      0.83      0.87      3851
+           3       0.86      0.72      0.78      1331
+           4       0.89      0.80      0.84      5670
+           5       0.91      0.84      0.87      2877
+           6       0.88      0.81      0.85      4394
+
+    accuracy                           0.97    172601
+   macro avg       0.91      0.82      0.86    172601
+weighted avg       0.97      0.97      0.97    172601
+

@@ -51,673 +51,209 @@ nohup: ignoring input
   _warn_prf(average, modifier, msg_start, len(result))
 /home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-epoch:  0  step:0000,------------loss:2.141583
-epoch:  0  step:0200,------------loss:0.927715
-epoch:  0  step:0400,------------loss:0.319863
-epoch:  0  step:0600,------------loss:0.571664
-epoch:  0  step:0800,------------loss:0.578996
-epoch:  0  step:1000,------------loss:0.056362
-epoch:  0  step:1200,------------loss:0.302276
-epoch:  0  step:1400,------------loss:0.370616
+程序开始运行 !
+
+数据加载器已完成 =>
+
+开始训练 =>
+epoch:  0  step:0000,------------loss:213.175690
+epoch:  0  step:0200,------------loss:26.405624
+0  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.88      0.11      0.19      1973
-           2       0.67      0.18      0.28      3851
-           3       0.80      0.07      0.13      1331
-           4       0.70      0.43      0.53      5670
-           5       0.73      0.24      0.36      2877
-           6       0.65      0.27      0.39      4394
+           0       0.90      0.96      0.93    152505
+           1       0.00      0.00      0.00      1973
+           2       0.08      0.15      0.11      3851
+           3       0.00      0.00      0.00      1331
+           4       0.24      0.07      0.11      5670
+           5       0.42      0.05      0.08      2877
+           6       0.70      0.00      0.00      4394
            7       0.00      0.00      0.00         0
 
-    accuracy                           0.27     20096
-   macro avg       0.55      0.16      0.24     20096
-weighted avg       0.71      0.27      0.37     20096
+    accuracy                           0.85    172601
+   macro avg       0.29      0.15      0.15    172601
+weighted avg       0.83      0.85      0.83    172601
 
-epoch:  1  step:0000,------------loss:0.251317
-epoch:  1  step:0200,------------loss:0.565743
-epoch:  1  step:0400,------------loss:0.170395
-epoch:  1  step:0600,------------loss:0.403225
-epoch:  1  step:0800,------------loss:0.442353
-epoch:  1  step:1000,------------loss:0.021702
-epoch:  1  step:1200,------------loss:0.210775
-epoch:  1  step:1400,------------loss:0.244260
+epoch:  1  step:0000,------------loss:9.762831
+epoch:  1  step:0200,------------loss:19.600973
+1  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.91      0.36      0.51      1973
-           2       0.78      0.57      0.66      3851
-           3       0.79      0.34      0.47      1331
-           4       0.87      0.61      0.72      5670
-           5       0.85      0.55      0.67      2877
-           6       0.80      0.52      0.63      4394
+           0       0.92      0.97      0.95    152505
+           1       0.50      0.00      0.00      1973
+           2       0.16      0.18      0.17      3851
+           3       0.01      0.01      0.01      1331
+           4       0.36      0.27      0.31      5670
+           5       0.26      0.12      0.16      2877
+           6       0.64      0.05      0.10      4394
            7       0.00      0.00      0.00         0
 
-    accuracy                           0.53     20096
-   macro avg       0.62      0.37      0.46     20096
-weighted avg       0.83      0.53      0.64     20096
+    accuracy                           0.87    172601
+   macro avg       0.36      0.20      0.21    172601
+weighted avg       0.86      0.87      0.85    172601
 
-epoch:  2  step:0000,------------loss:0.191806
-epoch:  2  step:0200,------------loss:0.399713
-epoch:  2  step:0400,------------loss:0.116061
-epoch:  2  step:0600,------------loss:0.324346
-epoch:  2  step:0800,------------loss:0.380491
-epoch:  2  step:1000,------------loss:0.014349
-epoch:  2  step:1200,------------loss:0.176053
-epoch:  2  step:1400,------------loss:0.193733
+epoch:  2  step:0000,------------loss:8.208508
+epoch:  2  step:0200,------------loss:16.058395
+2  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.91      0.48      0.63      1973
-           2       0.84      0.67      0.75      3851
-           3       0.84      0.45      0.58      1331
-           4       0.90      0.70      0.79      5670
-           5       0.89      0.66      0.76      2877
-           6       0.84      0.62      0.71      4394
+           0       0.94      0.98      0.96    152505
+           1       0.54      0.01      0.02      1973
+           2       0.27      0.22      0.24      3851
+           3       0.06      0.05      0.05      1331
+           4       0.38      0.44      0.40      5670
+           5       0.33      0.20      0.25      2877
+           6       0.67      0.16      0.26      4394
            7       0.00      0.00      0.00         0
 
-    accuracy                           0.63     20096
-   macro avg       0.65      0.45      0.53     20096
-weighted avg       0.87      0.63      0.73     20096
+    accuracy                           0.89    172601
+   macro avg       0.40      0.26      0.27    172601
+weighted avg       0.88      0.89      0.87    172601
 
-epoch:  3  step:0000,------------loss:0.146828
-epoch:  3  step:0200,------------loss:0.314700
-epoch:  3  step:0400,------------loss:0.083741
-epoch:  3  step:0600,------------loss:0.270945
-epoch:  3  step:0800,------------loss:0.316978
-epoch:  3  step:1000,------------loss:0.011437
-epoch:  3  step:1200,------------loss:0.140199
-epoch:  3  step:1400,------------loss:0.169846
+epoch:  3  step:0000,------------loss:7.204405
+epoch:  3  step:0200,------------loss:13.435913
+3  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.92      0.56      0.70      1973
-           2       0.86      0.73      0.79      3851
-           3       0.85      0.51      0.63      1331
-           4       0.91      0.75      0.82      5670
-           5       0.90      0.72      0.80      2877
-           6       0.87      0.68      0.76      4394
-
-    accuracy                           0.69     20096
-   macro avg       0.76      0.56      0.64     20096
-weighted avg       0.89      0.69      0.77     20096
-
-epoch:  4  step:0000,------------loss:0.134405
-epoch:  4  step:0200,------------loss:0.247354
-epoch:  4  step:0400,------------loss:0.082480
-epoch:  4  step:0600,------------loss:0.249324
-epoch:  4  step:0800,------------loss:0.288963
-epoch:  4  step:1000,------------loss:0.011454
-epoch:  4  step:1200,------------loss:0.127951
-epoch:  4  step:1400,------------loss:0.132553
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.93      0.61      0.73      1973
-           2       0.88      0.76      0.81      3851
-           3       0.86      0.56      0.68      1331
-           4       0.92      0.78      0.84      5670
-           5       0.90      0.75      0.82      2877
-           6       0.89      0.73      0.80      4394
+           0       0.95      0.98      0.96    152505
+           1       0.68      0.07      0.13      1973
+           2       0.39      0.28      0.33      3851
+           3       0.18      0.12      0.14      1331
+           4       0.42      0.56      0.48      5670
+           5       0.42      0.29      0.34      2877
+           6       0.72      0.30      0.42      4394
            7       0.00      0.00      0.00         0
 
-    accuracy                           0.73     20096
-   macro avg       0.67      0.52      0.59     20096
-weighted avg       0.90      0.73      0.80     20096
+    accuracy                           0.90    172601
+   macro avg       0.47      0.32      0.35    172601
+weighted avg       0.90      0.90      0.89    172601
 
-epoch:  5  step:0000,------------loss:0.130207
-epoch:  5  step:0200,------------loss:0.232740
-epoch:  5  step:0400,------------loss:0.063649
-epoch:  5  step:0600,------------loss:0.206878
-epoch:  5  step:0800,------------loss:0.276922
-epoch:  5  step:1000,------------loss:0.010001
-epoch:  5  step:1200,------------loss:0.125319
-epoch:  5  step:1400,------------loss:0.137735
+epoch:  4  step:0000,------------loss:6.242825
+epoch:  4  step:0200,------------loss:11.233583
+4  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.63      0.75      1973
-           2       0.88      0.79      0.83      3851
-           3       0.87      0.60      0.71      1331
-           4       0.93      0.79      0.85      5670
-           5       0.92      0.77      0.84      2877
-           6       0.90      0.74      0.81      4394
+           0       0.96      0.98      0.97    152505
+           1       0.72      0.16      0.26      1973
+           2       0.48      0.33      0.39      3851
+           3       0.33      0.22      0.26      1331
+           4       0.48      0.60      0.53      5670
+           5       0.52      0.41      0.46      2877
+           6       0.73      0.40      0.51      4394
            7       0.00      0.00      0.00         0
 
-    accuracy                           0.75     20096
-   macro avg       0.68      0.54      0.60     20096
-weighted avg       0.91      0.75      0.82     20096
+    accuracy                           0.91    172601
+   macro avg       0.53      0.39      0.42    172601
+weighted avg       0.91      0.91      0.91    172601
 
-epoch:  6  step:0000,------------loss:0.124818
-epoch:  6  step:0200,------------loss:0.197425
-epoch:  6  step:0400,------------loss:0.056639
-epoch:  6  step:0600,------------loss:0.185922
-epoch:  6  step:0800,------------loss:0.241964
-epoch:  6  step:1000,------------loss:0.006483
-epoch:  6  step:1200,------------loss:0.108395
-epoch:  6  step:1400,------------loss:0.117191
+epoch:  5  step:0000,------------loss:5.809222
+epoch:  5  step:0200,------------loss:9.721133
+5  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.66      0.77      1973
-           2       0.89      0.80      0.84      3851
-           3       0.87      0.63      0.73      1331
-           4       0.93      0.80      0.86      5670
-           5       0.92      0.78      0.84      2877
-           6       0.91      0.77      0.83      4394
+           0       0.96      0.98      0.97    152505
+           1       0.72      0.25      0.37      1973
+           2       0.57      0.41      0.48      3851
+           3       0.43      0.29      0.35      1331
+           4       0.52      0.64      0.58      5670
+           5       0.59      0.52      0.55      2877
+           6       0.75      0.46      0.57      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.77     20096
-   macro avg       0.78      0.63      0.70     20096
-weighted avg       0.92      0.77      0.83     20096
+    accuracy                           0.92    172601
+   macro avg       0.57      0.44      0.48    172601
+weighted avg       0.92      0.92      0.92    172601
 
-epoch:  7  step:0000,------------loss:0.112107
-epoch:  7  step:0200,------------loss:0.173582
-epoch:  7  step:0400,------------loss:0.050368
-epoch:  7  step:0600,------------loss:0.150765
-epoch:  7  step:0800,------------loss:0.203166
-epoch:  7  step:1000,------------loss:0.007489
-epoch:  7  step:1200,------------loss:0.091423
-epoch:  7  step:1400,------------loss:0.107665
+epoch:  6  step:0000,------------loss:5.216380
+epoch:  6  step:0200,------------loss:8.829862
+6  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.69      0.79      1973
-           2       0.90      0.81      0.85      3851
-           3       0.89      0.65      0.75      1331
-           4       0.94      0.81      0.87      5670
-           5       0.93      0.80      0.86      2877
-           6       0.92      0.78      0.85      4394
+           0       0.97      0.98      0.97    152505
+           1       0.79      0.33      0.46      1973
+           2       0.67      0.55      0.60      3851
+           3       0.54      0.39      0.45      1331
+           4       0.56      0.67      0.61      5670
+           5       0.63      0.57      0.60      2877
+           6       0.77      0.50      0.61      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.78     20096
-   macro avg       0.79      0.65      0.71     20096
-weighted avg       0.92      0.78      0.85     20096
+    accuracy                           0.93    172601
+   macro avg       0.62      0.50      0.54    172601
+weighted avg       0.93      0.93      0.93    172601
 
-epoch:  8  step:0000,------------loss:0.121857
-epoch:  8  step:0200,------------loss:0.156764
-epoch:  8  step:0400,------------loss:0.042207/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-
-epoch:  8  step:0600,------------loss:0.145185
-epoch:  8  step:0800,------------loss:0.188103
-epoch:  8  step:1000,------------loss:0.007718
-epoch:  8  step:1200,------------loss:0.100612
-epoch:  8  step:1400,------------loss:0.101872
+epoch:  7  step:0000,------------loss:4.820084
+epoch:  7  step:0200,------------loss:7.759791
+7  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.70      0.80      1973
-           2       0.90      0.83      0.86      3851
-           3       0.90      0.65      0.76      1331
-           4       0.95      0.81      0.87      5670
-           5       0.93      0.81      0.86      2877
-           6       0.92      0.80      0.86      4394
+           0       0.97      0.99      0.98    152505
+           1       0.81      0.41      0.55      1973
+           2       0.74      0.64      0.69      3851
+           3       0.60      0.46      0.52      1331
+           4       0.61      0.69      0.65      5670
+           5       0.68      0.60      0.64      2877
+           6       0.79      0.53      0.64      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.79     20096
-   macro avg       0.79      0.66      0.72     20096
-weighted avg       0.93      0.79      0.85     20096
+    accuracy                           0.94    172601
+   macro avg       0.65      0.54      0.58    172601
+weighted avg       0.94      0.94      0.94    172601
 
-epoch:  9  step:0000,------------loss:0.111195
-epoch:  9  step:0200,------------loss:0.155339
-epoch:  9  step:0400,------------loss:0.050069
-epoch:  9  step:0600,------------loss:0.125294
-epoch:  9  step:0800,------------loss:0.187724
-epoch:  9  step:1000,------------loss:0.007973
-epoch:  9  step:1200,------------loss:0.088958
-epoch:  9  step:1400,------------loss:0.089902
+epoch:  8  step:0000,------------loss:4.424941
+epoch:  8  step:0200,------------loss:7.154124
+8  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.71      0.81      1973
-           2       0.90      0.83      0.86      3851
-           3       0.91      0.67      0.77      1331
-           4       0.95      0.81      0.88      5670
-           5       0.93      0.81      0.87      2877
-           6       0.93      0.80      0.86      4394
+           0       0.97      0.99      0.98    152505
+           1       0.82      0.45      0.58      1973
+           2       0.77      0.70      0.73      3851
+           3       0.64      0.51      0.57      1331
+           4       0.64      0.71      0.67      5670
+           5       0.71      0.64      0.67      2877
+           6       0.80      0.56      0.66      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.79     20096
-   macro avg       0.79      0.66      0.72     20096
-weighted avg       0.93      0.79      0.85     20096
+    accuracy                           0.94    172601
+   macro avg       0.67      0.57      0.61    172601
+weighted avg       0.94      0.94      0.94    172601
 
-epoch:  10  step:0000,------------loss:0.102234
-epoch:  10  step:0200,------------loss:0.135195
-epoch:  10  step:0400,------------loss:0.037176
-epoch:  10  step:0600,------------loss:0.100911
-epoch:  10  step:0800,------------loss:0.173869
-epoch:  10  step:1000,------------loss:0.005889
-epoch:  10  step:1200,------------loss:0.092168
-epoch:  10  step:1400,------------loss:0.081676
+epoch:  9  step:0000,------------loss:4.069258
+epoch:  9  step:0200,------------loss:6.689681
+9  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.71      0.81      1973
-           2       0.90      0.84      0.87      3851
-           3       0.91      0.67      0.77      1331
-           4       0.95      0.83      0.88      5670
-           5       0.93      0.82      0.87      2877
-           6       0.93      0.81      0.87      4394
+           0       0.97      0.99      0.98    152505
+           1       0.84      0.51      0.63      1973
+           2       0.79      0.73      0.76      3851
+           3       0.66      0.53      0.59      1331
+           4       0.66      0.72      0.69      5670
+           5       0.74      0.67      0.70      2877
+           6       0.81      0.59      0.68      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.80     20096
-   macro avg       0.79      0.67      0.72     20096
-weighted avg       0.93      0.80      0.86     20096
+    accuracy                           0.95    172601
+   macro avg       0.68      0.59      0.63    172601
+weighted avg       0.95      0.95      0.95    172601
 
-epoch:  11  step:0000,------------loss:0.103982
-epoch:  11  step:0200,------------loss:0.129802
-epoch:  11  step:0400,------------loss:0.039978
-epoch:  11  step:0600,------------loss:0.090195
-epoch:  11  step:0800,------------loss:0.145211
-epoch:  11  step:1000,------------loss:0.006497
-epoch:  11  step:1200,------------loss:0.082316
-epoch:  11  step:1400,------------loss:0.068354
+epoch:  10  step:0000,------------loss:3.708780
+epoch:  10  step:0200,------------loss:6.166407
+10  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.71      0.81      1973
-           2       0.90      0.84      0.87      3851
-           3       0.89      0.71      0.79      1331
-           4       0.94      0.86      0.90      5670
-           5       0.94      0.81      0.87      2877
-           6       0.94      0.80      0.87      4394
+           0       0.97      0.99      0.98    152505
+           1       0.85      0.55      0.67      1973
+           2       0.81      0.76      0.78      3851
+           3       0.68      0.56      0.61      1331
+           4       0.68      0.73      0.71      5670
+           5       0.76      0.68      0.72      2877
+           6       0.81      0.62      0.70      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.81     20096
-   macro avg       0.79      0.68      0.73     20096
-weighted avg       0.93      0.81      0.87     20096
-
-epoch:  12  step:0000,------------loss:0.110164
-epoch:  12  step:0200,------------loss:0.131577
-epoch:  12  step:0400,------------loss:0.036417
-epoch:  12  step:0600,------------loss:0.080883
-epoch:  12  step:0800,------------loss:0.141495
-epoch:  12  step:1000,------------loss:0.006046
-epoch:  12  step:1200,------------loss:0.083477
-epoch:  12  step:1400,------------loss:0.057444
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.94      0.71      0.81      1973
-           2       0.90      0.84      0.87      3851
-           3       0.91      0.69      0.78      1331
-           4       0.96      0.79      0.87      5670
-           5       0.93      0.83      0.88      2877
-           6       0.93      0.82      0.87      4394
-
-    accuracy                           0.80     20096
-   macro avg       0.80      0.67      0.73     20096
-weighted avg       0.93      0.80      0.86     20096
-
-epoch:  13  step:0000,------------loss:0.102799
-epoch:  13  step:0200,------------loss:0.106160
-epoch:  13  step:0400,------------loss:0.036880
-epoch:  13  step:0600,------------loss:0.072896
-epoch:  13  step:0800,------------loss:0.136932
-epoch:  13  step:1000,------------loss:0.005700
-epoch:  13  step:1200,------------loss:0.075728
-epoch:  13  step:1400,------------loss:0.065696
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.94      0.72      0.82      1973
-           2       0.90      0.85      0.87      3851
-           3       0.92      0.70      0.79      1331
-           4       0.96      0.81      0.87      5670
-           5       0.93      0.83      0.88      2877
-           6       0.93      0.82      0.88      4394
-
-    accuracy                           0.81     20096
-   macro avg       0.80      0.68      0.73     20096
-weighted avg       0.93      0.81      0.86     20096
-
-epoch:  14  step:0000,------------loss:0.092907
-epoch:  14  step:0200,------------loss:0.089363
-epoch:  14  step:0400,------------loss:0.032807
-epoch:  14  step:0600,------------loss:0.084344
-epoch:  14  step:0800,------------loss:0.134453
-epoch:  14  step:1000,------------loss:0.005006
-epoch:  14  step:1200,------------loss:0.067629
-epoch:  14  step:1400,------------loss:0.058192
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.94      0.73      0.82      1973
-           2       0.91      0.85      0.88      3851
-           3       0.91      0.70      0.79      1331
-           4       0.96      0.80      0.87      5670
-           5       0.94      0.83      0.88      2877
-           6       0.94      0.82      0.88      4394
-
-    accuracy                           0.81     20096
-   macro avg       0.80      0.68      0.73     20096
-weighted avg       0.94      0.81      0.87     20096
-
-epoch:  15  step:0000,------------loss:0.099578
-epoch:  15  step:0200,------------loss:0.103936
-epoch:  15  step:0400,------------loss:0.029066
-epoch:  15  step:0600,------------loss:0.062330
-epoch:  15  step:0800,------------loss:0.110839
-epoch:  15  step:1000,------------loss:0.005915
-epoch:  15  step:1200,------------loss:0.062374
-epoch:  15  step:1400,------------loss:0.047523
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.94      0.73      0.82      1973
-           2       0.91      0.85      0.88      3851
-           3       0.92      0.71      0.80      1331
-           4       0.96      0.82      0.88      5670
-           5       0.94      0.84      0.88      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.81     20096
-   macro avg       0.80      0.68      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
-
-epoch:  16  step:0000,------------loss:0.075660
-epoch:  16  step:0200,------------loss:0.094958
-epoch:  16  step:0400,------------loss:0.027842
-epoch:  16  step:0600,------------loss:0.063017
-epoch:  16  step:0800,------------loss:0.105871
-epoch:  16  step:1000,------------loss:0.004113
-epoch:  16  step:1200,------------loss:0.075388
-epoch:  16  step:1400,------------loss:0.050812
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.94      0.73      0.82      1973
-           2       0.91      0.85      0.88      3851
-           3       0.91      0.72      0.80      1331
-           4       0.96      0.81      0.88      5670
-           5       0.94      0.83      0.88      2877
-           6       0.94      0.82      0.88      4394
-
-    accuracy                           0.81     20096
-   macro avg       0.80      0.68      0.73     20096
-weighted avg       0.94      0.81      0.87     20096
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
+    accuracy                           0.95    172601
+   macro avg       0.70      0.61      0.65    172601
+weighted avg       0.95      0.95      0.95    172601
 /home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-
-epoch:  17  step:0000,------------loss:0.081898
-epoch:  17  step:0200,------------loss:0.072819
-epoch:  17  step:0400,------------loss:0.025573
-epoch:  17  step:0600,------------loss:0.064776
-epoch:  17  step:0800,------------loss:0.118251
-epoch:  17  step:1000,------------loss:0.004601
-epoch:  17  step:1200,------------loss:0.070029
-epoch:  17  step:1400,------------loss:0.050698
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.73      0.82      1973
-           2       0.91      0.86      0.88      3851
-           3       0.92      0.73      0.81      1331
-           4       0.96      0.83      0.89      5670
-           5       0.94      0.83      0.89      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.82     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.82      0.87     20096
-
-epoch:  18  step:0000,------------loss:0.069886
-epoch:  18  step:0200,------------loss:0.074757
-epoch:  18  step:0400,------------loss:0.019840
-epoch:  18  step:0600,------------loss:0.061852
-epoch:  18  step:0800,------------loss:0.093261
-epoch:  18  step:1000,------------loss:0.003265
-epoch:  18  step:1200,------------loss:0.062408
-epoch:  18  step:1400,------------loss:0.043511
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.91      0.85      0.88      3851
-           3       0.91      0.73      0.81      1331
-           4       0.96      0.80      0.87      5670
-           5       0.94      0.83      0.88      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.81     20096
-   macro avg       0.80      0.68      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
-
-epoch:  19  step:0000,------------loss:0.070098
-epoch:  19  step:0200,------------loss:0.070796
-epoch:  19  step:0400,------------loss:0.021379
-epoch:  19  step:0600,------------loss:0.056679
-epoch:  19  step:0800,------------loss:0.088116
-epoch:  19  step:1000,------------loss:0.002529
-epoch:  19  step:1200,------------loss:0.057434
-epoch:  19  step:1400,------------loss:0.040227
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.90      0.87      0.89      3851
-           3       0.90      0.75      0.82      1331
-           4       0.96      0.82      0.88      5670
-           5       0.95      0.84      0.89      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.82     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.82      0.87     20096
-
-epoch:  20  step:0000,------------loss:0.065120
-epoch:  20  step:0200,------------loss:0.060474
-epoch:  20  step:0400,------------loss:0.021647
-epoch:  20  step:0600,------------loss:0.056117
-epoch:  20  step:0800,------------loss:0.080477
-epoch:  20  step:1000,------------loss:0.003859
-epoch:  20  step:1200,------------loss:0.070305
-epoch:  20  step:1400,------------loss:0.035504
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.91      0.85      0.88      3851
-           3       0.90      0.72      0.80      1331
-           4       0.96      0.80      0.87      5670
-           5       0.94      0.84      0.89      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.81     20096
-   macro avg       0.80      0.68      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
-
-epoch:  21  step:0000,------------loss:0.073571
-epoch:  21  step:0200,------------loss:0.056888
-epoch:  21  step:0400,------------loss:0.022303
-epoch:  21  step:0600,------------loss:0.055402
-epoch:  21  step:0800,------------loss:0.078218
-epoch:  21  step:1000,------------loss:0.002831
-epoch:  21  step:1200,------------loss:0.046646
-epoch:  21  step:1400,------------loss:0.032319
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.91      0.85      0.88      3851
-           3       0.90      0.74      0.81      1331
-           4       0.95      0.82      0.88      5670
-           5       0.95      0.84      0.89      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.82     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.82      0.87     20096
-
-epoch:  22  step:0000,------------loss:0.072323
-epoch:  22  step:0200,------------loss:0.056030
-epoch:  22  step:0400,------------loss:0.015849
-epoch:  22  step:0600,------------loss:0.045052
-epoch:  22  step:0800,------------loss:0.089781
-epoch:  22  step:1000,------------loss:0.004615
-epoch:  22  step:1200,------------loss:0.047273
-epoch:  22  step:1400,------------loss:0.031390
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.75      0.84      1973
-           2       0.91      0.85      0.88      3851
-           3       0.90      0.76      0.82      1331
-           4       0.96      0.84      0.90      5670
-           5       0.95      0.84      0.89      2877
-           6       0.94      0.84      0.89      4394
-
-    accuracy                           0.83     20096
-   macro avg       0.80      0.70      0.75     20096
-weighted avg       0.94      0.83      0.88     20096
-
-epoch:  23  step:0000,------------loss:0.058358
-epoch:  23  step:0200,------------loss:0.064909
-epoch:  23  step:0400,------------loss:0.021355
-epoch:  23  step:0600,------------loss:0.041872
-epoch:  23  step:0800,------------loss:0.081702
-epoch:  23  step:1000,------------loss:0.002598
-epoch:  23  step:1200,------------loss:0.045021
-epoch:  23  step:1400,------------loss:0.031590
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.91      0.85      0.88      3851
-           3       0.90      0.73      0.81      1331
-           4       0.96      0.80      0.87      5670
-           5       0.94      0.85      0.89      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.81     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
-
-epoch:  24  step:0000,------------loss:0.065130
-epoch:  24  step:0200,------------loss:0.053917
-epoch:  24  step:0400,------------loss:0.017473
-epoch:  24  step:0600,------------loss:0.046497
-epoch:  24  step:0800,------------loss:0.067813
-epoch:  24  step:1000,------------loss:0.002052
-epoch:  24  step:1200,------------loss:0.032209
-epoch:  24  step:1400,------------loss:0.018532
-              precision    recall  f1-score   support
-
-           0       0.00      0.00      0.00         0
-           1       0.95      0.75      0.84      1973
-           2       0.91      0.85      0.88      3851
-           3       0.90      0.74      0.81      1331
-           4       0.96      0.80      0.87      5670
-           5       0.94      0.86      0.89      2877
-           6       0.94      0.83      0.88      4394
-
-    accuracy                           0.82     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.82      0.87     20096
-
-epoch:  25  step:0000,------------loss:0.062389
-epoch:  25  step:0200,------------loss:0.038921
-epoch:  25  step:0400,------------loss:0.017675
-epoch:  25  step:0600,------------loss:0.048187
-epoch:  25  step:0800,------------loss:0.071908
-epoch:  25  step:1000,------------loss:0.004268
-epoch:  25  step:1200,------------loss:0.035387
-epoch:  /home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
 /home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
@@ -801,106 +337,452 @@ epoch:  /home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn
   _warn_prf(average, modifier, msg_start, len(result))
 /home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
   _warn_prf(average, modifier, msg_start, len(result))
-25  step:1400,------------loss:0.030601
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+epoch:  11  step:0000,------------loss:3.840586
+epoch:  11  step:0200,------------loss:5.550292
+11  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.92      0.84      0.88      3851
-           3       0.91      0.73      0.81      1331
-           4       0.96      0.80      0.88      5670
-           5       0.94      0.85      0.89      2877
-           6       0.94      0.83      0.88      4394
+           0       0.98      0.99      0.98    152505
+           1       0.86      0.59      0.70      1973
+           2       0.82      0.77      0.80      3851
+           3       0.70      0.58      0.64      1331
+           4       0.70      0.75      0.73      5670
+           5       0.77      0.70      0.73      2877
+           6       0.83      0.64      0.72      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.81     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
+    accuracy                           0.95    172601
+   macro avg       0.71      0.63      0.66    172601
+weighted avg       0.95      0.95      0.95    172601
 
-epoch:  26  step:0000,------------loss:0.047382
-epoch:  26  step:0200,------------loss:0.040215
-epoch:  26  step:0400,------------loss:0.015729
-epoch:  26  step:0600,------------loss:0.042449
-epoch:  26  step:0800,------------loss:0.074257
-epoch:  26  step:1000,------------loss:0.006316
-epoch:  26  step:1200,------------loss:0.030506
-epoch:  26  step:1400,------------loss:0.025835
+epoch:  12  step:0000,------------loss:3.538677
+epoch:  12  step:0200,------------loss:5.213238
+12  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.91      0.85      0.88      3851
-           3       0.90      0.74      0.81      1331
-           4       0.96      0.80      0.87      5670
-           5       0.94      0.85      0.89      2877
-           6       0.94      0.82      0.88      4394
+           0       0.98      0.99      0.98    152505
+           1       0.86      0.63      0.73      1973
+           2       0.83      0.79      0.81      3851
+           3       0.71      0.61      0.66      1331
+           4       0.71      0.77      0.74      5670
+           5       0.79      0.71      0.74      2877
+           6       0.83      0.66      0.74      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.81     20096
-   macro avg       0.80      0.68      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
+    accuracy                           0.96    172601
+   macro avg       0.71      0.64      0.67    172601
+weighted avg       0.95      0.96      0.95    172601
 
-epoch:  27  step:0000,------------loss:0.063316
-epoch:  27  step:0200,------------loss:0.026390
-epoch:  27  step:0400,------------loss:0.011647
-epoch:  27  step:0600,------------loss:0.038009
-epoch:  27  step:0800,------------loss:0.064467
-epoch:  27  step:1000,------------loss:0.001667
-epoch:  27  step:1200,------------loss:0.036162
-epoch:  27  step:1400,------------loss:0.020000
+epoch:  13  step:0000,------------loss:3.265032
+epoch:  13  step:0200,------------loss:4.862739
+13  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.95      0.74      0.83      1973
-           2       0.92      0.85      0.88      3851
-           3       0.89      0.75      0.81      1331
-           4       0.96      0.81      0.88      5670
-           5       0.94      0.86      0.90      2877
-           6       0.95      0.83      0.89      4394
+           0       0.98      0.99      0.98    152505
+           1       0.86      0.65      0.74      1973
+           2       0.84      0.80      0.82      3851
+           3       0.73      0.62      0.67      1331
+           4       0.72      0.78      0.75      5670
+           5       0.80      0.71      0.76      2877
+           6       0.84      0.67      0.75      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.82     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.82      0.87     20096
+    accuracy                           0.96    172601
+   macro avg       0.72      0.65      0.68    172601
+weighted avg       0.96      0.96      0.96    172601
 
-epoch:  28  step:0000,------------loss:0.053632
-epoch:  28  step:0200,------------loss:0.041359
-epoch:  28  step:0400,------------loss:0.017314
-epoch:  28  step:0600,------------loss:0.034236
-epoch:  28  step:0800,------------loss:0.056569
-epoch:  28  step:1000,------------loss:0.001536
-epoch:  28  step:1200,------------loss:0.028980
-epoch:  28  step:1400,------------loss:0.016870
+epoch:  14  step:0000,------------loss:3.088727
+epoch:  14  step:0200,------------loss:4.554588
+14  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.75      0.84      1973
-           2       0.91      0.84      0.88      3851
-           3       0.89      0.75      0.81      1331
-           4       0.96      0.81      0.88      5670
-           5       0.95      0.84      0.89      2877
-           6       0.95      0.82      0.88      4394
+           0       0.98      0.99      0.98    152505
+           1       0.87      0.67      0.76      1973
+           2       0.85      0.81      0.83      3851
+           3       0.73      0.63      0.68      1331
+           4       0.73      0.78      0.76      5670
+           5       0.81      0.73      0.77      2877
+           6       0.84      0.69      0.76      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.81     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
+    accuracy                           0.96    172601
+   macro avg       0.73      0.66      0.69    172601
+weighted avg       0.96      0.96      0.96    172601
 
-epoch:  29  step:0000,------------loss:0.044257
-epoch:  29  step:0200,------------loss:0.042058
-epoch:  29  step:0400,------------loss:0.009931
-epoch:  29  step:0600,------------loss:0.037350
-epoch:  29  step:0800,------------loss:0.060194
-epoch:  29  step:1000,------------loss:0.003367
-epoch:  29  step:1200,------------loss:0.017584
-epoch:  29  step:1400,------------loss:0.027837
+epoch:  15  step:0000,------------loss:3.150267
+epoch:  15  step:0200,------------loss:4.269635
+15  开始进行测试
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         0
-           1       0.94      0.75      0.83      1973
-           2       0.92      0.83      0.87      3851
-           3       0.89      0.76      0.82      1331
-           4       0.95      0.81      0.87      5670
-           5       0.94      0.85      0.89      2877
-           6       0.95      0.81      0.88      4394
+           0       0.98      0.99      0.98    152505
+           1       0.87      0.69      0.77      1973
+           2       0.85      0.82      0.84      3851
+           3       0.73      0.64      0.68      1331
+           4       0.74      0.79      0.77      5670
+           5       0.82      0.74      0.78      2877
+           6       0.85      0.70      0.77      4394
+           7       0.00      0.00      0.00         0
 
-    accuracy                           0.81     20096
-   macro avg       0.80      0.69      0.74     20096
-weighted avg       0.94      0.81      0.87     20096
+    accuracy                           0.96    172601
+   macro avg       0.73      0.67      0.70    172601
+weighted avg       0.96      0.96      0.96    172601
 
+epoch:  16  step:0000,------------loss:3.191044
+epoch:  16  step:0200,------------loss:4.068550
+16  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98    152505
+           1       0.87      0.70      0.78      1973
+           2       0.85      0.83      0.84      3851
+           3       0.74      0.66      0.70      1331
+           4       0.75      0.81      0.78      5670
+           5       0.83      0.74      0.78      2877
+           6       0.86      0.71      0.77      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.96    172601
+   macro avg       0.73      0.68      0.70    172601
+weighted avg       0.96      0.96      0.96    172601
+
+epoch:  17  step:0000,------------loss:2.895544
+epoch:  17  step:0200,------------loss:3.762853
+17  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98    152505
+           1       0.87      0.72      0.79      1973
+           2       0.85      0.84      0.84      3851
+           3       0.74      0.66      0.70      1331
+           4       0.76      0.81      0.78      5670
+           5       0.83      0.75      0.79      2877
+           6       0.86      0.72      0.78      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.96    172601
+   macro avg       0.74      0.69      0.71    172601
+weighted avg       0.96      0.96      0.96    172601
+
+epoch:  18  step:0000,------------loss:2.898709
+epoch:  18  step:0200,------------loss:3.450956
+18  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.88      0.73      0.79      1973
+           2       0.86      0.84      0.85      3851
+           3       0.74      0.68      0.71      1331
+           4       0.76      0.82      0.79      5670
+           5       0.84      0.76      0.80      2877
+           6       0.86      0.72      0.79      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.96    172601
+   macro avg       0.74      0.69      0.71    172601
+weighted avg       0.96      0.96      0.96    172601
+
+epoch:  19  step:0000,------------loss:2.725756
+epoch:  19  step:0200,------------loss:3.207041
+19  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.88      0.74      0.80      1973
+           2       0.87      0.84      0.85      3851
+           3       0.75      0.68      0.72      1331
+           4       0.77      0.82      0.79      5670
+           5       0.85      0.76      0.80      2877
+           6       0.87      0.73      0.79      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.96    172601
+   macro avg       0.75      0.69      0.72    172601
+weighted avg       0.96      0.96      0.96    172601
+
+epoch:  20  step:0000,------------loss:2.431164
+epoch:  20  step:0200,------------loss:3.266605
+20  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.88      0.74      0.81      1973
+           2       0.86      0.85      0.86      3851
+           3       0.76      0.69      0.72      1331
+           4       0.78      0.82      0.80      5670
+           5       0.85      0.77      0.81      2877
+           6       0.86      0.75      0.80      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.75      0.70      0.72    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  21  step:0000,------------loss:2.348350
+epoch:  21  step:0200,------------loss:3.013421
+21  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.89      0.74      0.81      1973
+           2       0.87      0.85      0.86      3851
+           3       0.76      0.69      0.72      1331
+           4       0.78      0.82      0.80      5670
+           5       0.85      0.77      0.81      2877
+           6       0.87      0.75      0.80      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.75      0.70      0.72    172601
+weighted avg       0.97      0.97      0.97    172601
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/data/anaconda3/envs/qxy_lxmert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+epoch:  22  step:0000,------------loss:2.276321
+epoch:  22  step:0200,------------loss:2.866565
+22  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.89      0.74      0.81      1973
+           2       0.87      0.85      0.86      3851
+           3       0.77      0.70      0.73      1331
+           4       0.78      0.83      0.80      5670
+           5       0.86      0.77      0.81      2877
+           6       0.87      0.75      0.81      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.75      0.70      0.73    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  23  step:0000,------------loss:1.989923
+epoch:  23  step:0200,------------loss:2.519106
+23  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.88      0.75      0.81      1973
+           2       0.87      0.86      0.86      3851
+           3       0.77      0.70      0.74      1331
+           4       0.79      0.83      0.81      5670
+           5       0.85      0.78      0.81      2877
+           6       0.87      0.76      0.81      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.75      0.71      0.73    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  24  step:0000,------------loss:2.157378
+epoch:  24  step:0200,------------loss:2.500452
+24  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.88      0.75      0.81      1973
+           2       0.87      0.86      0.86      3851
+           3       0.76      0.72      0.74      1331
+           4       0.78      0.84      0.81      5670
+           5       0.86      0.77      0.82      2877
+           6       0.88      0.76      0.81      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.75      0.71      0.73    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  25  step:0000,------------loss:1.944753
+epoch:  25  step:0200,------------loss:2.216588
+25  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.89      0.75      0.81      1973
+           2       0.87      0.86      0.86      3851
+           3       0.78      0.71      0.74      1331
+           4       0.80      0.84      0.82      5670
+           5       0.87      0.78      0.82      2877
+           6       0.88      0.77      0.82      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.76      0.71      0.73    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  26  step:0000,------------loss:1.999485
+epoch:  26  step:0200,------------loss:2.307242
+26  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.89      0.75      0.82      1973
+           2       0.87      0.86      0.87      3851
+           3       0.78      0.71      0.74      1331
+           4       0.80      0.83      0.82      5670
+           5       0.87      0.78      0.82      2877
+           6       0.88      0.77      0.82      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.76      0.71      0.73    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  27  step:0000,------------loss:1.864342
+epoch:  27  step:0200,------------loss:2.312308
+27  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.89      0.76      0.82      1973
+           2       0.87      0.86      0.87      3851
+           3       0.77      0.72      0.74      1331
+           4       0.79      0.84      0.82      5670
+           5       0.87      0.78      0.82      2877
+           6       0.88      0.77      0.82      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.76      0.72      0.73    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  28  step:0000,------------loss:1.741011
+epoch:  28  step:0200,------------loss:1.870384
+28  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99    152505
+           1       0.89      0.75      0.81      1973
+           2       0.88      0.84      0.86      3851
+           3       0.72      0.76      0.74      1331
+           4       0.73      0.87      0.80      5670
+           5       0.88      0.76      0.82      2877
+           6       0.88      0.74      0.81      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.75      0.72      0.73    172601
+weighted avg       0.97      0.97      0.97    172601
+
+epoch:  29  step:0000,------------loss:1.612077
+epoch:  29  step:0200,------------loss:1.752332
+29  开始进行测试
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99    152505
+           1       0.89      0.76      0.82      1973
+           2       0.87      0.87      0.87      3851
+           3       0.78      0.73      0.75      1331
+           4       0.79      0.84      0.82      5670
+           5       0.88      0.78      0.83      2877
+           6       0.89      0.77      0.82      4394
+           7       0.00      0.00      0.00         0
+
+    accuracy                           0.97    172601
+   macro avg       0.76      0.72      0.74    172601
+weighted avg       0.97      0.97      0.97    172601
+
+程序运行时间: 7时36分22.66秒
+程序已结束 ！

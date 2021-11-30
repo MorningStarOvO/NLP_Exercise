@@ -54,19 +54,18 @@ def val(config, model):
         
         # ----- 每次输入一条路径 ----- #
         corpus = corpus[0][:length.item()].unsqueeze(0)
-        label = label[0][:length.item()] 
+        label = label[0][:length.item()].unsqueeze(0)
         
-        score, predict = model(corpus)
+        predict = model(corpus)
 
-        # print("predict: ", predict)
-        # print("label: ", label)
         
         # ----- 转换为 label ----- #
-        label=label.tolist()
+        label=label.tolist()[0]
+        predict = predict.tolist()[0]
 
         # ----- 添加到列表 ----- #
         preds.extend(predict)
-        labels.extend(label)
+        labels.extend(label)        
 
     # ----- 不计算 0 ----- #
     if config.socre_choice == 1:
@@ -100,14 +99,14 @@ def train(config, model, dataloader, optimizer):
             corpus, label, length = data
             corpus, label, length = corpus.cuda(), label.cuda(), length.cuda()
     
-            # ----- 每次输入一条路径 ----- #
-            corpus = corpus[0][:length.item()].unsqueeze(0)
-            label = label[0][:length.item()] 
-            # print("corpus:", corpus) 
-            # print("label: ", label) 
-    
+            # ----- 每次进行长度优化 ----- #
+            corpus = corpus[:, :max(length)]
+            label = label[:, :max(length)]
+            # print("corpus: ", corpus.shape)
+            # print("label: ", label.shape)
+
             # ----- 计算损失 ----- #
-            loss = model.neg_log_likelihood(corpus, label)
+            loss = model.neg_log_likelihood_tensor(corpus, label)
             loss.backward()
             optimizer.step()
             # print(index)

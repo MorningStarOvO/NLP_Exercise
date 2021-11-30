@@ -60,14 +60,14 @@ class NERLSTM(nn.Module):
         self.hidden = self.init_hidden()
 
     # ----- 前馈过程 ----- #
-    def forward(self, sentence):  
-        # 得到 BiLSTM 的特征
-        lstm_feats = self._get_lstm_features(sentence) 
-            
-        # 找到最好路径，并得到分数
-        # Find the best path, given the features.
-        score, tag_seq = self._viterbi_decode(lstm_feats)
-        return score, tag_seq
+    def forward(self, x):  
+        lstm_feats = self._get_lstm_features(x) # 经过LSTM+Linear后的输出作为CRF的输入
+
+        tag_seq = torch.tensor(self._viterbi_decode(lstm_feats[0])).view(1,lstm_feats.shape[1])
+        for i in range(1, lstm_feats.shape[0]):
+            q=torch.tensor(self._viterbi_decode(lstm_feats[i])).view(1,lstm_feats.shape[1])
+            tag_seq = torch.cat((tag_seq, q),dim = 0 )
+        return tag_seq
 
 
     # ----- 初始化的 h0 和 c0 ----- #
@@ -94,9 +94,6 @@ class NERLSTM(nn.Module):
                 torch.randn(2, 1, self.hidden_dim // 2))
 
     def _viterbi_decode(self, feats):
-
-        # print(feats.shape)
-        feats=feats[0]
         
         # 预测序列的得分，维特比解码，输出得分与路径值
         backpointers = []
@@ -140,20 +137,21 @@ class NERLSTM(nn.Module):
         assert start == self.tag_to_ix[START_TAG]  # Sanity check
         best_path.reverse()# 把从后向前的路径正过来
 
-        return path_score, best_path
+        return best_path
 
 
     # ----- 计算 loss Function ----- #
     def neg_log_likelihood(self, sentence, tags):# loss function
-        feats = self._get_lstm_features(sentence)[0] # 经过LSTM+Linear后的输出作为CRF的输入
+        feats = self._get_lstm_features(sentence) # 经过LSTM+Linear后的输出作为CRF的输入
+        print("feats: ", feats.shape)
+        
         forward_score = self._forward_alg(feats) # loss的log部分的结果
+        print("forward_score: ", forward_score.shape) 
+        
         gold_score = self._score_sentence(feats, tags)# loss的后半部分S(X,y)的结果
+        print("gold_score: ", gold_score.shape)
         
-        # print("feats: ", feats.shape)
-        # print("forward_score: ", forward_score.shape) 
-        # print("gold_score: ", gold_score.shape)
-        
-        # print("forward_score - gold_score: ", forward_score - gold_score)
+
         return forward_score - gold_score #Loss
 
 
@@ -216,3 +214,96 @@ class NERLSTM(nn.Module):
                 score = score + self.transitions[tags[i + 1], tags[i]] + feat[tags[i + 1]]
             score = score + self.transitions[self.tag_to_ix[STOP_TAG], tags[-1]]
             return score
+
+    def neg_log_likelihood_tensor(self, sentence, tags):  # loss function
+        feats = self._get_lstm_features(sentence) # 经过LSTM+Linear后的输出作为CRF的输入
+        len_feats = feats.shape[0]
+
+        forward_score = self._tensor_forward_alg(feats)
+        gold_score = self._tensor_score_sentence(feats, tags)
+
+        q = torch.sum(forward_score - gold_score)
+        ans = q / len_feats
+
+        return ans
+
+    def _tensor_score_sentence(self, feats, tags):  # 求Loss function的第二项
+
+        score = torch.zeros(feats.shape[0]).cuda()
+        score = score.view(feats.shape[0], 1)
+        star_tag = torch.tensor([self.tag_to_ix[START_TAG]], dtype = torch.long).expand(feats.shape[0],
+                                                                                        1).cuda()  # shape=1
+        # tags=32,100
+        tags = torch.cat([star_tag, tags], 1)
+        star_tag = torch.tensor([self.tag_to_ix[STOP_TAG]], dtype = torch.long).expand(feats.shape[0], 1).cuda()
+        tags = torch.cat([tags, star_tag], 1)
+        # transitions = self.transitions.expand(32, self.tagset_size, self.tagset_size)
+        len_s = feats.shape[1] + 1  # 获取长度
+        check = torch.arange(feats.shape[0])
+        # 遍历句子，迭代feats的行数次
+        for i in range(len_s):
+            tag_now = tags[:, i]  # tag=[32]
+            tag_nex = tags[:, i + 1]
+            # score = score + transitions[tags[i + 1], tags[i]].expand(32, 1) + feat[:,tags[i + 1]]  # feat里没行的tags[i+1]列信息
+            temp = torch.index_select(self.transitions, 0, tag_nex)  # temp.shape=[32,10] ,第i行就是第i个batch的转移数组
+            temp = temp[check, tag_now].view(feats.shape[0], 1)
+            score += temp
+            if i <= len_s - 2:
+                feat = feats[:, i, :]  # feat=32*10
+                score += feat[check, tag_nex].view(feats.shape[0], 1)
+            # score = score + + feat[:,tags[i + 1]]  # feat里没行的tags[i+1]列信息
+
+        return score
+
+    def _tensor_forward_alg(self, feats):  # 预测序列的得分，就是Loss的右边第一项#all cuda
+        init_alphas = torch.full((feats.shape[0], self.tagset_size), -10000.).cuda()
+        # 用-10000.来填充一个形状为[batch,tagset_size]的tensor
+        # 若batch=2, tags.len是5 star_tag=4，则tensor([[-10000., -10000., -10000., 0., -10000.],
+        #                                           [-10000., -10000., -10000., 0., -10000.] ])，
+        # 将start的值为零，表示开始进行网络的传播，
+        init_alphas[:, self.tag_to_ix[START_TAG]] = 0.
+
+        forward_var = init_alphas  # 初始状态的forward_var，随着step t变化
+        len_s = feats.shape[1]  # 获取长度
+        # 遍历句子，迭代feats的行数次
+        for i in range(len_s):
+            feat = feats[:, i, :]
+            # 获取第一个标签下的loss
+            emit_score = feat[:, 0].view(feats.shape[0], 1).expand(feats.shape[0], self.tagset_size)  # cuda
+            trans_score = self.transitions[0].view(1, -1)  # 维度是1*10,#cuda
+            trans_score = trans_score.expand(feats.shape[0], self.tagset_size)  # 维度是32*10,#cuda
+            next_tag_var = forward_var + trans_score + emit_score  # cuda
+            temp = self._tensor_log_sum_exp(next_tag_var).view(1, feats.shape[0])
+
+            for next_tag in range(1, self.tagset_size):
+                # feat[当前标签]的扩展矩阵是emit_score，维度为32*10
+                # e=e.expand(2,a.shape[2])
+                emit_score = feat[:, next_tag].view(feats.shape[0], 1).expand(feats.shape[0], self.tagset_size)  # cuda
+                trans_score = self.transitions[next_tag].view(1, -1)  # 维度是1*10,#cuda
+                trans_score = trans_score.expand(feats.shape[0], self.tagset_size)  # 维度是32*10,#cuda
+                # 由lstm运行进入隐层再到输出层得到标签Ｂ的概率，emit_score维度是１＊10，10个值是相同的
+                next_tag_var = forward_var + trans_score + emit_score  # cuda
+
+                # 需要.view()是因为返回值本身是0维的，然后将他们cat在一起
+                temp = torch.cat((temp, self._tensor_log_sum_exp(next_tag_var).view(1, feats.shape[0])), dim = 0)
+
+
+
+            forward_var = temp.transpose(0, 1)
+
+        terminal_var = forward_var + self.transitions[self.tag_to_ix[STOP_TAG]]  # cuda
+        alpha = self._tensor_log_sum_exp(terminal_var).view(feats.shape[0], 1)  # alpha是一个0维的tensor，这里变成【32,1】维度的格式
+
+        return alpha  # cuda
+
+    def _tensor_log_sum_exp(self, vec):  # vec维度为batch*10
+        # max_score = vec[0, self.argmax(vec)]  # max_score的维度为1
+
+        max_score, idx = torch.max(vec, 1)  # max_ . shape=[1,batch]
+        max_score_broadcast = max_score.expand(vec.shape[1], vec.shape[0])  # 维度为10*batch
+        # torch.exp将所有元素求exp
+        # torch.sum是求tensor的所有元素和
+        # torch.log对所有元素求log
+        vec = vec.transpose(0, 1)
+
+        return max_score + torch.log(torch.sum(torch.exp(vec - max_score_broadcast), dim = 0))  # 每一列相加

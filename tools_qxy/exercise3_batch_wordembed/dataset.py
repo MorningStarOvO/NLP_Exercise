@@ -43,7 +43,7 @@ class NERdataset(Dataset):
         label = open(label_file).readlines()
         
         # self.glove_list = build_glove()
-        # word2id = build_glove()
+        word2id = build_glove()
         self.corpus = []
         self.label = []
         self.length = []
@@ -64,7 +64,7 @@ class NERdataset(Dataset):
                     self.corpus[-1].append(word2id['pad'])
                     self.label[-1].append(tag2id['PAD'])
         
-        self.corpus = torch.Tensor(self.corpus).long() 
+        self.corpus = torch.Tensor(self.corpus).float()  
         self.label = torch.Tensor(self.label).long()
         self.length = torch.Tensor(self.length).long()
 
