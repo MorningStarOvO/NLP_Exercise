@@ -13,7 +13,7 @@ class Config():
         self.embedding_dim = 300
         self.hidden_dim = 512
         self.save_model = 'checkpoint/exp3/model_lyp.pth'
-        self.batch_size = 32
+        self.batch_size = 128
         self.socre_choice = 1
 
 def build_vocab(data_dir):
