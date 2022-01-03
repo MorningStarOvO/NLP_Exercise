@@ -1,0 +1,18 @@
+[INFO] 2022-01-03 08:56:25,754 : SentencePiece loaded at ./data/en.model
+[INFO] 2022-01-03 08:56:25,768 : SentencePiece loaded at ./data/ch.model
+[INFO] 2022-01-03 08:56:25,806 : SentencePiece loaded at ./data/en.model
+[INFO] 2022-01-03 08:56:25,820 : SentencePiece loaded at ./data/ch.model
+[INFO] 2022-01-03 08:56:25,821 : -------- Dataset Build! --------
+[INFO] 2022-01-03 08:56:25,821 : -------- Get Dataloader! --------
+[INFO] 2022-01-03 08:56:30,276 : Scheduler: total_steps:899500.0, warmup_steps:89950.0
+[INFO] 2022-01-03 08:56:30,278 : ------ Start Training! ------
+[INFO] 2022-01-03 08:56:31,217 : Model at ./output/model.pth Loaded. Continue Training from epoch 40 to 100
+[INFO] 2022-01-03 08:56:31,217 : [Epoch 40/ Rank 0] Trainging...
+[INFO] 2022-01-03 09:09:02,737 : Epoch: 40, loss: 4.697
+[INFO] 2022-01-03 09:09:02,737 : [Epoch 40] Validating...
+[INFO] 2022-01-03 09:09:02,752 : SentencePiece loaded at ./data/ch.model
+[INFO] 2022-01-03 09:30:28,100 : dev dataset evaluation finished, saved at ./output/temp/dev_rank_0
+[INFO] 2022-01-03 09:30:41,040 : Epoch: 40 Dev Bleu Score: BLEU = 7.80 37.9/14.5/4.8/1.8 (BP = 0.943 ratio = 0.945 hyp_len = 535406 ref_len = 566822)
+[INFO] 2022-01-03 09:30:44,640 : [Epoch 40] Module saved!
+[INFO] 2022-01-03 09:30:47,952 : Best Module in [Epoch 40] saved!
+[INFO] 2022-01-03 09:30:47,953 : [Epoch 41/ Rank 0] Trainging...

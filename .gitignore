@@ -4,3 +4,11 @@ SimHei.ttf
 data/exp1_train
 data/exp1_val 
 data/glove
+data/homework_MT
+data/homework_RE
+tools_qxy/homework_MT/Trans_zh2en
+*.pth 
+tools_qxy/homework_RE/RE-BiLSTM-Att-tensorflow
+tools_qxy/homework_RE/RE-CNN-tensorflow
+tools_qxy/homework_RE/RE-CNN-tensorflow
+tools_qxy/homework_RE/RelationExtract-Pytorch
